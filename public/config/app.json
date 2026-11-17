@@ -1,0 +1,5 @@
+{
+  "_comment": "basemap: local=本地矢量渲染离线底图; online=Carto在线; none=无底图。天地图密钥填 tiandituTk 后可二期接入。",
+  "basemap": "local",
+  "tiandituTk": ""
+}

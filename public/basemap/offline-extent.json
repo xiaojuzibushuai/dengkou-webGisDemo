@@ -1,0 +1,8 @@
+{
+  "west": 110.120886,
+  "south": 40.37419172,
+  "east": 111.223974,
+  "north": 40.660701280000005,
+  "png": "offline-overview.png",
+  "note": "soft land plate under vectors; replace with QGIS export if needed"
+}

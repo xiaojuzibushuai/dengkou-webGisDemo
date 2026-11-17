@@ -1,0 +1,36 @@
+{
+  "name": "dengkou-irrigation-webgis",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "geo:convert": "python scripts/shp2geojson.py",
+    "basemap:offline": "python scripts/render_offline_basemap.py",
+    "topo:build": "python scripts/build_branch_parcels.py",
+    "topo:seed": "python scripts/seed_branch_volumes.py",
+    "seg:build": "python scripts/build_canal_segments.py",
+    "seg:seed": "python scripts/seed_segment_flows.py"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "echarts": "^6.1.0",
+    "element-plus": "^2.14.7",
+    "ol": "^10.11.0",
+    "pinia": "^2.3.1",
+    "vue": "^3.5.13",
+    "vue-echarts": "^7.0.3",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/tsconfig": "^0.7.0",
+    "sass": "^1.77.8",
+    "typescript": "~5.8.2",
+    "vite": "^5.4.19",
+    "vue-tsc": "^2.2.8"
+  }
+}
